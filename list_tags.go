@@ -45,7 +45,7 @@ func main() {
 
 
 	// To create subscription tag
-	tagName := "test_ramesh"
+	tagName := "test_r"
 	value := "checking"
 	_, cerr := tagClient.CreateOrUpdate(context.Background(), tagName)
 	if cerr != nil {
