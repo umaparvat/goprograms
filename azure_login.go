@@ -13,9 +13,9 @@ func main() {
 	// var (
 	// 	authorizer autorest.Authorizer
 	// )
-	var subscriptionID = "XX9b19e3-37d7-4b99-b3b0-XXXXXX"
-	var appId = "XXXXc96-2d30-4f0f-bcee-6fcbbbdd289f"
-	var tenant = "XXXX0-cb1e-40f7-b59a-YYYYYYY"
+	var subscriptionID = "XXXXXXXX"
+	var appId = "XXXXcXXX89f"
+	var tenant = "XXXX-YYYYYYY"
 	var appSecret = "XXXLE_W34dd-9~RRRRRR"
 	// dfc := auth.NewDeviceFlowConfig(appId, tenant)
 	// spToken, err := dfc.ServicePrincipalToken()

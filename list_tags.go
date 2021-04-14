@@ -10,9 +10,9 @@ import (
 )
 
 func main() {
-	subscriptionID := "GGGG730f4-3ea1-45f5-969e-XXXXXX"
-	appId := "YYYYYc96-2d30-4f0f-bcee-XXXXX"
-	tenant := "YYYYYY-cb1e-40f7-b59a-XXXXX"
+	subscriptionID := "GGGG7XXXXXX"
+	appId := "YYYYYe-XXXXX"
+	tenant := "YYYYYY-c-XXXXX"
 	appSecret := "GGGGGG-9~KK9tIV4Lli9XXXXX"
 	clientAuthorizer := auth.NewClientCredentialsConfig(appId, appSecret, tenant)
 	authorizer, err := clientAuthorizer.Authorizer()
