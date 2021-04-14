@@ -10,10 +10,10 @@ import (
 )
 
 func main() {
-	subscriptionID := "GGGG730f4-3ea1-45f5-969e-579dbc0bdf82"
-	appId := "YYYYYc96-2d30-4f0f-bcee-6fcbbbdd289f"
-	tenant := "YYYYYY-cb1e-40f7-b59a-154105743342"
-	appSecret := "GGGGGG-9~KK9tIV4Lli9CG5cFUHZS"
+	subscriptionID := "GGGG730f4-3ea1-45f5-969e-XXXXXX"
+	appId := "YYYYYc96-2d30-4f0f-bcee-XXXXX"
+	tenant := "YYYYYY-cb1e-40f7-b59a-XXXXX"
+	appSecret := "GGGGGG-9~KK9tIV4Lli9XXXXX"
 	clientAuthorizer := auth.NewClientCredentialsConfig(appId, appSecret, tenant)
 	authorizer, err := clientAuthorizer.Authorizer()
 	tagClient := resources.NewTagsClient(subscriptionID)

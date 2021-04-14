@@ -73,9 +73,9 @@ func main() {
 	// authorizer, err := deviceConfig.Authorizer()
 	//fmt.Println(authorizer)
 	const activeDirectoryEndpoint = "https://login.microsoftonline.com/"
-	tenantID := "d3bFFFFFFF80-cb1e-40f7-b59a-154105743342"
+	tenantID := "d3bFFFFFFF80-cb1e-40f7-b59a-XXXXXXX"
 	oauthConfig, err := adal.NewOAuthConfig(activeDirectoryEndpoint, tenantID)
-	applicationID := "UUUUU46c96-2d30-4f0f-bcee-6fcbbbdd289f"
+	applicationID := "UUUUU46c96-2d30-4f0f-bcee-YYYYYYYY"
 	callback := func(token adal.Token) error {
 		// This is called after the token is acquired
 		fmt.Println("token acquired successfully")
@@ -83,7 +83,7 @@ func main() {
 	}
 	// The resource for which the token is acquired
 	resource := "https://management.core.windows.net/"
-	applicationSecret := "CCCCCdLE_W34dd-9~KK9tIV4Lli9CG5cFUHZS"
+	applicationSecret := "CCCCCdLE_W34dd-9~RRRRRTTTTTT"
 	spt, err := adal.NewServicePrincipalToken(*oauthConfig,
 		applicationID,
 		applicationSecret,
@@ -101,7 +101,7 @@ func main() {
 		//fmt.Println(mytoken)
 	}
 
-	url := "https://management.azure.com/subscriptions/259b19e3-37d7-UUUUUU-VVVVV-5df86937a7f5/resourceGroups/spoke-network-demo/providers/Microsoft.Compute/virtualMachines/SACP-6433-VM01-00/instanceView?api-version=2020-12-01"
+	url := "https://management.azure.com/subscriptions/TTTTTTT-37d7-UUUUUU-VVVVV-TTTTTTT/resourceGroups/spoke-network-demo/providers/Microsoft.Compute/virtualMachines/SCP-6433-VM01-00/instanceView?api-version=2020-12-01"
 
 	method := "GET"
 

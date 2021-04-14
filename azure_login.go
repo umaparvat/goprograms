@@ -13,10 +13,10 @@ func main() {
 	// var (
 	// 	authorizer autorest.Authorizer
 	// )
-	var subscriptionID = "XX9b19e3-37d7-4b99-b3b0-5df86937a7f5"
+	var subscriptionID = "XX9b19e3-37d7-4b99-b3b0-XXXXXX"
 	var appId = "XXXXc96-2d30-4f0f-bcee-6fcbbbdd289f"
-	var tenant = "XXXX0-cb1e-40f7-b59a-154105743342"
-	var appSecret = "XXXLE_W34dd-9~KK9tIV4Lli9CG5cFUHZS"
+	var tenant = "XXXX0-cb1e-40f7-b59a-YYYYYYY"
+	var appSecret = "XXXLE_W34dd-9~RRRRRR"
 	// dfc := auth.NewDeviceFlowConfig(appId, tenant)
 	// spToken, err := dfc.ServicePrincipalToken()
 	// authorizer = autorest.NewBearerAuthorizer(spToken)
@@ -24,7 +24,7 @@ func main() {
 	// 	log.Fatal(err)
 	// }
 
-	var rg = "spoke-network-demo"
+	var rg = "spC-network-demo"
 	vmClient, insClient := AzureAuth(subscriptionID, appId, appSecret, tenant)
 	getVM(vmClient, rg, insClient)
 }
